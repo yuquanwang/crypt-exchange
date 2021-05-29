@@ -1,16 +1,17 @@
 <template>
   <v-app>
-    <header-user />
-    <v-main>
-      <router-view />
+    <left-bar />
+    <v-main app>
+      <main-content />
     </v-main>
   </v-app>
 </template>
 <script>
-import HeaderUser from './views/Layouts/HeaderUser.vue'
+import LeftBar from './views/Layouts/LeftBar.vue'
+import MainContent from "./views/Layouts/Main.vue";
 export default {
-  components: { HeaderUser },
-  name: 'Index'
+  name: 'Index',
+  components: { LeftBar ,MainContent}
 }
 </script>
 

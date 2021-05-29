@@ -6,11 +6,15 @@
   
 </template>
 <script>
-import { placeOrder } from '@/api/order-api'
-
-export default defineComponent({
-  setup() {
-    
-  },
-})
+import { placeOrder } from '@/api/trade/trade-api'
+export default{
+  name:'PlaceOrder',
+  methods: {
+    placeOrder(){
+      placeOrder().then(resp=>{
+        console.log(resp)
+      })
+    }
+  }
+}
 </script>

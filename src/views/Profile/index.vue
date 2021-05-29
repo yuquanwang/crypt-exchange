@@ -8,8 +8,8 @@
   <div>
     <v-divider></v-divider>
     <v-expansion-panels multiple v-model="panels" style="padding-right:1px">
-      <v-expansion-panel v-for="(item, idx) in allPanels" :key="idx">
-        <v-expansion-panel-header :hide-actions="openState" style="padding:0px 10px">
+      <v-expansion-panel v-for="(item, idx) in allPanels" :key="idx" class="panel">
+        <v-expansion-panel-header :hide-actions="openState" class="panelheader">
           <v-row align="center" class="spacer" no-gutters>
             <v-col>
               <v-avatar size="36px">
@@ -58,13 +58,19 @@ export default {
         { component: 'app-key-setting', icon: 'mdi-key-link', name: 'AppKey', color: 'teal' }
       ],
       openState: false,
-      panels: []
+      panels: [0,1,2]
     }
   }
 }
 </script>
-<style scoped>
+<style>
 .icon-left {
   position: absolute;
+}
+.panel .v-expansion-panel-content__wrap{
+  padding:0 4px 16px
+}
+.panelheader{
+  padding:0px 10px
 }
 </style>

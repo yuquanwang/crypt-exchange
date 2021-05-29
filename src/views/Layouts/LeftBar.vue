@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer v-model="drawer" :mini-variant.sync="mini" permanent>
+  <v-navigation-drawer v-model="drawer" :mini-variant.sync="mini" permanent width="400" app>
     <v-list-item class="px-2">
       <v-list-item-avatar medium>
         <v-img src="https://randomuser.me/api/portraits/men/85.jpg"></v-img>
