@@ -24,7 +24,7 @@ export function timeDuration(value) {
   // mills to d/h/m
   if (value < 60000) {
     // <1分
-    return parseInt(value / 1000) + 's'
+    return parseInt(value / 1000) + '秒'
   }
   let tm = value
   let sub = tm
@@ -36,7 +36,7 @@ export function timeDuration(value) {
   sub = tm % 60
   tm = parseInt(tm / 60)
   if (sub > 0) {
-    fmt = sub + 'm'
+    fmt = sub + '分'
   }
   if (tm === 0) {
     return fmt
@@ -44,10 +44,10 @@ export function timeDuration(value) {
   sub = tm % 24
   tm = parseInt(tm / 24)
   if (sub > 0) {
-    fmt = sub + 'h' + fmt
+    fmt = sub + '小时' + fmt
   }
   if (tm > 0) {
-    fmt = tm + 'd' + fmt
+    fmt = tm + '天' + fmt
   }
   return fmt
 }
@@ -59,4 +59,28 @@ export function timeDuration(value) {
 export function timePast(mills) {
   const now = Date.now()
   return timeDuration(now - mills)
+}
+/**
+ * @param {number} time timestamp
+ */
+export function longTimeAgo(time) {
+  //秒
+  if (!time) {
+    return ''
+  }
+  const secondsDuration = (Date.now() - time) / 1000
+  if (secondsDuration < 30) {
+    return secondsDuration + '秒前'
+  } else if (secondsDuration < 3600) {
+    // less 1 hour
+    const sec = Math.trunc(secondsDuration % 60)
+    const miu = Math.trunc(secondsDuration / 60)
+    return sec === 0 ? miu + '分钟前' : miu + '分' + sec + '秒前'
+  } else if (secondsDuration < 3600 * 24) {
+    const miu = Math.trunc((secondsDuration % 3600)/60)
+    const hour = Math.trunc(secondsDuration / 3600)
+    return miu === 0 ? hour + '小时前' : hour + '时' + miu + '分前'
+  } else {
+    return dateFormat(time)
+  }
 }

@@ -48,67 +48,64 @@
 </template>
 <!-- 下单信息 -->
 <script>
+import { platformsMeta } from "@/utils/metadatas.js";
 export default {
   name: 'Orders',
   data () {
     return {
       loadingMore: false,
-      platforms:[
-        {id:270,name:"Binance",icon: 'https://s2.coinmarketcap.com/static/img/exchanges/64x64/270.png'},
-        {id:102,name:"Huobi global",icon: 'https://s2.coinmarketcap.com/static/img/exchanges/64x64/102.png'},
-        {id:302,name:"Gate.io",icon: 'https://s2.coinmarketcap.com/static/img/exchanges/64x64/302.png'}
-      ],
-       orders: [
-        {
-          id: '12',
-          platform: 270,
-          from:'BTC',
-          to:'BNB',
-          type:'sell',
-          amount: 200,
-          quote:103023,
-          finalQuote:103022.8721,
-          status: 1,
-          createTime:1622301551701
-        },
-        {
-          id: '13',
-          platform: 270,
-          from:'USDT',
-          to:'BNB',
-          type:'sell',
-          amount: '300',
-          quote:0.98,
-          finalQuote:0.98012,
-          status: 1,
-          createTime:1621437551000
-        },
-        {
-          id: '14',
-          platform: 102,
-          from:'USDT',
-          to:'ETH',
-          type:'buy',
-          amount: '300',
-          quote:0.0823,
-          finalQuote:0.0822,
-          status: 2,
-          createTime:1620919151000
-        },
-        {
-          id: '15',
-          platform: 302,
-          from:'SHIB',
-          to:'USDT',
-          type:'sell',
-          amount: '1298312304.21283',
-          quote:334.1,
-          finalQuote:333.23,
-          status: 2,
-          createTime:1612970351000
-        }
-      ]
-    }
+      platforms: platformsMeta,
+      orders: [
+      {
+        id: '12',
+        platform: 270,
+        from:'BTC',
+        to:'BNB',
+        type:'sell',
+        amount: 200,
+        quote:103023,
+        finalQuote:103022.8721,
+        status: 1,
+        createTime:1622301551701
+      },
+      {
+        id: '13',
+        platform: 270,
+        from:'USDT',
+        to:'BNB',
+        type:'sell',
+        amount: '300',
+        quote:0.98,
+        finalQuote:0.98012,
+        status: 1,
+        createTime:1621437551000
+      },
+      {
+        id: '14',
+        platform: 102,
+        from:'USDT',
+        to:'ETH',
+        type:'buy',
+        amount: '300',
+        quote:0.0823,
+        finalQuote:0.0822,
+        status: 2,
+        createTime:1620919151000
+      },
+      {
+        id: '15',
+        platform: 302,
+        from:'SHIB',
+        to:'USDT',
+        type:'sell',
+        amount: '1298312304.21283',
+        quote:334.1,
+        finalQuote:333.23,
+        status: 2,
+        createTime:1612970351000
+      }
+    ]
+  }
   },
   methods: {
     getPlatform(id){

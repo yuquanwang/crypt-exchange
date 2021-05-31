@@ -14,11 +14,15 @@
     </v-row>
     <v-divider/>
     <v-row class="trade-component">
-      <dynamic-message />
+      <v-col>
+        <dynamic-message @selectAsset="assetSelected"/>
+      </v-col>
     </v-row>
     <v-divider />
-    <v-row>
-      <place-order />
+    <v-row class="trade-component">
+      <v-col>
+        <place-order :baseAsset="msgAsset"/>
+      </v-col>
     </v-row>
   </div>
 </template>
@@ -32,11 +36,33 @@ export default {
     TrendView,
     DynamicMessage,
     PlaceOrder
+  },
+  data () {
+    return {
+      msgAsset:''
+    }
+  },
+  methods: {
+    assetSelected(asset){
+      this.msgAsset = asset
+    }
   }
 }
 </script>
-<style scoped>
+<style>
 .trade-component.row{
- margin: 10px 20px;
+ margin: 5px 10px;
+}
+.trade-row .col {
+  padding: 3px;
+}
+.sub-text {
+  padding-left: 20px;
+  color: grey;
+  font-size: 6px;
+}
+.sub-title {
+  padding-left: 20px;
+  color: grey;
 }
 </style>

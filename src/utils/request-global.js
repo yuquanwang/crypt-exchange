@@ -47,28 +47,28 @@ service.interceptors.response.use(
     if (response.status !== 200 && response.status !== 201) {
       console.log(response.status)
       if (response.status === 403) {
-        Message({
-          message: 'Access denied',
+        this.$toast.error({
+          text: 'Access denied',
           type: 'warning',
-          duration: 5 * 1000
+          timeout: 5 * 1000
         })
         return Promise.reject(new Error(res.message || 'Error'))
       }
       if (response.status === 401) {
-        Message({
-          message: 'Login TimeOut',
+        this.$toast({
+          text: 'Login TimeOut',
           type: 'warning',
-          duration: 5 * 1000
+          timeout: 5 * 1000
         })
         store.dispatch('user/resetToken').then(() => {
           location.reload()
         })
         return Promise.reject(new Error(res.message || 'Error'))
       }
-      Message({
-        message: res.message || 'Error',
+      this.$toast({
+        text: res.message || 'Error',
         type: 'error',
-        duration: 5 * 1000
+        timeout: 5 * 1000
       })
       return Promise.reject(new Error(res.message || 'Error'))
     }
@@ -77,18 +77,18 @@ service.interceptors.response.use(
     console.log('err:' + error) // for debug
     if (error && error.response) {
       if (error.response.status === 403) {
-        Message({
-          message: 'Access denied',
+        this.$toast({
+          text: 'Access denied',
           type: 'error',
-          duration: 5 * 1000
+          timeout: 5 * 1000
         })
         return Promise.reject(error)
       }
       if (error.response.status === 401) {
-        Message({
-          message: 'Login TimeOut',
+        this.$toast({
+          text: 'Login TimeOut',
           type: 'warning',
-          duration: 5 * 1000
+          timeout: 5 * 1000
         })
         store.dispatch('user/resetToken').then(() => {
           location.reload()
@@ -96,18 +96,18 @@ service.interceptors.response.use(
         return Promise.reject(error)
       }
       if (error.response.status === 400) {
-        Message({
-          message: error.response.data.msg || 'Need parameters that can be matched exactly',
+        this.$toast({
+          text: error.response.data.msg || 'Need parameters that can be matched exactly',
           type: 'warning',
-          duration: 5 * 1000
+          timeout: 5 * 1000
         })
         return Promise.reject(error)
       }
       const tip = error.response.data.errorData
-      Message({
-        message: tip,
+      this.$toast({
+        text: tip,
         type: 'error',
-        duration: 5 * 1000
+        timeout: 5 * 1000
       })
     }
     console.log('error.response is null')

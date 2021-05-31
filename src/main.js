@@ -9,6 +9,7 @@ Vue.config.productionTip = false
 Object.keys(filters).forEach(key => {
   Vue.filter(key, filters[key])
 })
+
 new Vue({
   router,
   store,

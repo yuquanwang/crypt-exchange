@@ -1,6 +1,6 @@
 <template>
-  <el-row>
-    <el-col>
+  <v-row>
+    <v-col>
       <v-sparkline
         :value="value"
         :gradient="gradient"
@@ -14,8 +14,8 @@
         :auto-line-width="autoLineWidth"
         auto-draw
       ></v-sparkline>
-    </el-col>
-  </el-row>
+    </v-col>
+  </v-row>
 </template>
 <script>
 const gradients = [['#222'], ['#42b3f4'], ['red', 'orange', 'yellow'], ['purple', 'violet'], ['#00c6ff', '#F0F', '#FF0'], ['#f72047', '#ffd200', '#1feaea']]
