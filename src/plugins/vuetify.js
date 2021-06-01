@@ -3,27 +3,10 @@
 import Vue from 'vue'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
-import VuetifyToast from 'vuetify-toast-snackbar'
+import VueSnackbar from 'vue-snack'
 
+Vue.use(VueSnackbar)
 Vue.use(Vuetify)
-
-Vue.use(VuetifyToast, {
-  x: 'right', // default
-  y: 'bottom', // default
-  color: 'info', // default
-  icon: 'info',
-  timeout: 3000, // default
-  dismissable: true, // default
-  autoHeight: false, // default
-  multiLine: false, // default
-  vertical: false, // default
-  shorts: {
-    custom: {
-      color: 'purple'
-    }
-  },
-  property: '$toast' // default
-})
 const theme = {
   primary: '#2196f3',
   secondary: '#009688',
