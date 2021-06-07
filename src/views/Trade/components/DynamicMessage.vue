@@ -56,6 +56,9 @@ export default {
       //初始化weosocket
       const wsuri = WebsockUri
       let _this = this
+      if(_this.websock != null && _this.websock.readyState === 1){
+        return ;
+      }
       if ('Websocket' in window) {
         _this.websock = new WebSocket(wsuri)
       } else if ('MozWebSocket' in window) {
@@ -66,33 +69,35 @@ export default {
       let heartbeat = {
         timeout: 5000,
         timerObj: null,
-        reset: () => {
+        reset: function() {
           clearInterval(this.timerObj)
           return this
         },
-        start: () => {
+        start: function(){
           this.timerObj = setInterval(() => {
             const ht = JSON.stringify({ type: 'heartbeat' })
-            _this.websock.send(ht)
+            if(_this.websock.readyState === 1){
+              _this.websock.send(ht)
+            }
           }, this.timeout)
         }
       }
       _this.websock.onmessage = (msg) => {
         //数据接收
-        const redata = JSON.parse(msg)
-        if ('newmsg' === redata.type) {
+        const redata = JSON.parse(msg.data)
+        if ('NEWS' === redata.type) {
           _this.latestMsg = redata.data
         }
       }
       _this.websock.onopen = () => {
         //连接建立之后执行send方法发送数据
         this.wsErrorCounter = 0
-        let actions = { type: 'test', data: 'conn' }
-        _this.websocket.send(JSON.stringify(actions))
+        let actions = { type: 'hello', data: 'conn' }
+        _this.websock.send(JSON.stringify(actions))
         heartbeat.reset().start()
       }
       _this.websock.onerror = this.wsError
-      _this.websock.onclose = () => console.log('断开连接', e)
+      _this.websock.onclose = () => console.log('断开连接')
     },
     wsError() {
       //连接建立失败重连,0ing,1on,2closing,3closed

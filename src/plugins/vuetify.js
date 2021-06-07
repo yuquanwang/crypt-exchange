@@ -3,9 +3,11 @@
 import Vue from 'vue'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
-import VueSnackbar from 'vue-snack'
+import Message from 'vue-m-message'
+import 'vue-m-message/dist/index.css'
 
-Vue.use(VueSnackbar)
+// will mount `Vue.prototype.$msg`
+Vue.use(Message, { name: 'msg' })
 Vue.use(Vuetify)
 const theme = {
   primary: '#2196f3',

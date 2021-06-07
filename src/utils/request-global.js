@@ -1,6 +1,7 @@
 import axios from 'axios'
 import qs from 'qs'
 import store from '@/store'
+import Message from 'vue-m-message'
 
 // create an axios instance
 const service = axios.create({
@@ -44,6 +45,10 @@ service.interceptors.response.use(
   (response) => {
     const res = response.data
     // if the status is not 200, it is judged as an error.
+    const token = response.headers['X-token']
+    if (token) {
+      store.storeToken(token)
+    }
     if (response.status !== 200 && response.status !== 201) {
       console.log(response.status)
       if (response.status === 403) {
@@ -60,7 +65,7 @@ service.interceptors.response.use(
           type: 'warning',
           timeout: 5 * 1000
         })
-        store.dispatch('user/resetToken').then(() => {
+        store.dispatch('sessions/resetToken').then(() => {
           location.reload()
         })
         return Promise.reject(new Error(res.message || 'Error'))
@@ -90,7 +95,7 @@ service.interceptors.response.use(
           type: 'warning',
           timeout: 5 * 1000
         })
-        store.dispatch('user/resetToken').then(() => {
+        store.dispatch('ussessionser/resetToken').then(() => {
           location.reload()
         })
         return Promise.reject(error)

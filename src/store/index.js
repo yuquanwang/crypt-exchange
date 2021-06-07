@@ -8,6 +8,7 @@ export default new Vuex.Store({
     token: localStorage.getItem('token'),
     csrfHeader: localStorage.getItem('csrfHeader')
   },
+  getters: {},
   mutations: {
     setToken(state, token) {
       state.token = token

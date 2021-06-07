@@ -1,7 +1,6 @@
 import request from '@/utils/request'
 import MD5 from 'crypto-js/md5'
 
-const prefix = '/pub/sessions'
 export function login(identity, password) {
   return request(
     {
@@ -17,7 +16,7 @@ export function logout() {
   return request(
     {
       url: '/pub/sessions/drop',
-      method: 'post'
+      method: 'put'
     },
     true
   )

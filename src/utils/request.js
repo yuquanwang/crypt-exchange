@@ -1,5 +1,4 @@
 import httpRequest from './request-global'
-import store from '../store'
 import { filterEmptyField, filterStringLeadingAndTrailingSpaces } from './index'
 
 export default async function request(data, isFilter = false) {
