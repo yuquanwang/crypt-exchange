@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42">
+  <defs>
+    <style>.cls-check-none{fill:none;}.cls-check{fill:#12CD9F;}</style>
+  </defs>
+  <g>
+    <g>
+      <rect class="cls-check-none" width="42" height="42" />
+      <path class="cls-check" d="M36.91,11.36,15.65,32.28a.59.59,0,0,1-.85,0l-9.7-10a.38.38,0,0,1,0-.47l1.38-1.88a.29.29,0,0,1,.42-.06l7.87,6a.8.8,0,0,0,.95,0L35.15,9.62a.34.34,0,0,1,.45,0l1.31,1.3A.29.29,0,0,1,36.91,11.36Z" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <style>.cls-punch-red-circle{fill:url(#gradient_41);}.cls-punch-red-content{fill:url(#gradient_55);}</style>
+    <linearGradient id="gradient_41" x1="377.58" y1="-394.33" x2="377.58" y2="-393.33" gradientTransform="matrix(48, 0, 0, -48, -18099.94, -18880)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff6158" />
+      <stop offset="1" stop-color="#ffa09b" />
+    </linearGradient>
+    <linearGradient id="gradient_55" x1="24" y1="34" x2="24" y2="14" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffe9e9" />
+      <stop offset="1" stop-color="#fff" />
+    </linearGradient>
+  </defs>
+  <g>
+    <g>
+      <path class="cls-punch-red-circle" d="M24,0A24,24,0,1,1,0,24,24,24,0,0,1,24,0Z" />
+      <path class="cls-punch-red-content" d="M32.86,14H30v2.5a1.29,1.29,0,1,1-2.57,0V14H20.57v2.5a1.29,1.29,0,1,1-2.57,0V14H15.14A3.18,3.18,0,0,0,12,17.24V30.76A3.18,3.18,0,0,0,15.14,34H32.86A3.18,3.18,0,0,0,36,30.76V17.24A3.18,3.18,0,0,0,32.86,14Zm-4,9.47L24.4,28.21a1.28,1.28,0,0,1-1.83,0l-2.63-2.71a1.35,1.35,0,0,1,0-1.88,1.25,1.25,0,0,1,1.83,0l1.69,1.73L27,21.62a1.28,1.28,0,0,1,1.83,0A1.38,1.38,0,0,1,28.86,23.47Z" />
+    </g>
+  </g>
+</svg>

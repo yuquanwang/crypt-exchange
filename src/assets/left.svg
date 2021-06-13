@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42">
+  <defs>
+    <style>.cls-left-rect{fill:none;}</style>
+  </defs>
+  <g>
+    <g>
+      <path d="M27.88,37.4a2,2,0,0,1-1.4-.57L12.05,22.39a2,2,0,0,1,0-2.78L26.48,5.17A2,2,0,0,1,29.27,8L16.22,21,29.27,34a2,2,0,0,1-1.39,3.36Z" />
+      <rect class="cls-left-rect" width="42" height="42" transform="translate(42 42) rotate(180)" />
+    </g>
+  </g>
+</svg>

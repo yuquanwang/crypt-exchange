@@ -1,0 +1,50 @@
+{
+  "extends": [
+    "react-app",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript"
+  ],
+  "plugins": [
+    "import"
+  ],
+  "globals": {
+    "antTheme": true
+  },
+  "rules": {
+    "semi": [
+      "error",
+      "never"
+    ],
+//    "max-len": [
+//      "warn",
+//      {
+//        "code": 1300
+//      }
+//    ],
+    "import/order": "error",
+    "import/named": "off"
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [
+        ".ts",
+        ".tsx"
+      ]
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "moduleDirectory": ["node_modules","src/"]
+      }
+    }
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/*.ts?(x)"
+      ],
+      "rules": {}
+    }
+  ]
+}

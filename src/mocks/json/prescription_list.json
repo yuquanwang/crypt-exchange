@@ -1,0 +1,32 @@
+{
+  "pageCount": 0,
+  "pageNo": 0,
+  "pageSize": 0,
+  "recordCount": 0,
+  "records": [
+    {
+      "code": "",
+      "drugs": [
+        {
+          "dosage": "",
+          "drugCode": "",
+          "drugName": "",
+          "importedTag": "",
+          "manufacturer": "",
+          "medicareTag": "",
+          "price": "",
+          "productId": "",
+          "productName": "",
+          "quantity": 0,
+          "spec": "",
+          "thumbnailUrl": ""
+        }
+      ],
+      "expiredDate": "",
+      "id": 0,
+      "reason": "",
+      "status": 0,
+      "thumbnailUrl": ""
+    }
+  ]
+}

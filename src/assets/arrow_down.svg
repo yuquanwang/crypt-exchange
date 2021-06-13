@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <style>.cls-arrow-down{fill:none;}</style>
+  </defs>
+  <g>
+    <g>
+      <path d="M17,19a1.15,1.15,0,0,0-.7,1.9l7,7.77a.91.91,0,0,0,1.4,0l7-7.77A1.16,1.16,0,0,0,31,19Z" />
+      <rect class="cls-arrow-down" width="48" height="48" transform="translate(48 0) rotate(90)" />
+    </g>
+  </g>
+</svg>

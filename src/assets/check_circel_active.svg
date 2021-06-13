@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42">
+  <defs>
+    <style>.cls-check-circle-active{fill-rule:evenodd;}</style>
+  </defs>
+  <g>
+    <g>
+      <path class="cls-check-circle-active" d="M21,0A21,21,0,1,0,42,21,21,21,0,0,0,21,0ZM33.93,13.17l-17.28,17a.48.48,0,0,1-.68,0L8.08,22a.3.3,0,0,1,0-.38l1.13-1.53A.24.24,0,0,1,9.52,20l6.4,4.9a.63.63,0,0,0,.76,0L32.5,11.75a.27.27,0,0,1,.36,0l1.07,1.05A.26.26,0,0,1,33.93,13.17Z" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 88">
+  <defs>
+    <style>.cls-cross-shield-blue-circle{fill:#4d9bff;}.cls-cross-shield-blue-content{fill:#fff;}</style>
+  </defs>
+  <g>
+    <g>
+      <circle class="cls-cross-shield-blue-circle" cx="44" cy="44" r="44" />
+      <path class="cls-cross-shield-blue-content" d="M66.29,44.37C66.29,52.93,54.44,68,44,68S21.71,52.93,21.71,44.37V28.77A2.44,2.44,0,0,1,24,26.35a34,34,0,0,0,18.54-5.92,2.57,2.57,0,0,1,2.84,0A34,34,0,0,0,64,26.35a2.44,2.44,0,0,1,2.33,2.42Z" />
+      <path class="cls-cross-shield-blue-circle" d="M52,40H48V36a3,3,0,0,0-3-3H43a3,3,0,0,0-3,3v4H36a3,3,0,0,0-3,3v2a3,3,0,0,0,3,3h4v4a3,3,0,0,0,3,3h2a3,3,0,0,0,3-3V48h4a3,3,0,0,0,3-3V43A3.07,3.07,0,0,0,52,40Z" />
+    </g>
+  </g>
+</svg>

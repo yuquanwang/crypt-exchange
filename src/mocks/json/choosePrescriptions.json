@@ -1,0 +1,579 @@
+[
+  {
+    "patientId": "NzM5ODM0OTI0Mg==",
+    "patientName": "黎",
+    "prescriptions": [
+      {
+        "auditNo": "Nzg2MjUxMDg0Ng==",
+        "auditStatus": false,
+        "medicalInsuranceSettlement": "智渊",
+        "medicalInsuranceSettlementRatio": 12011,
+        "specialAllowance": "鸿涛",
+        "specialAllowanceRatio": 89612,
+        "products": [
+          {
+            "id": 40569,
+            "quantity": 681,
+            "suggestedPrice": 90188,
+            "featureTags": [
+              "杨",
+              "邓",
+              "曹"
+            ],
+            "images": [
+              "金",
+              "梁"
+            ],
+            "specification": "姚",
+            "importMark": 62619
+          },
+          {
+            "id": 32119,
+            "quantity": 29822,
+            "suggestedPrice": 19410,
+            "featureTags": [
+              "张",
+              "郭"
+            ],
+            "images": [
+              "田",
+              "陶",
+              "侯"
+            ],
+            "specification": "毛",
+            "importMark": 95461
+          },
+          {
+            "id": 93769,
+            "quantity": 2976,
+            "suggestedPrice": 89270,
+            "featureTags": [
+              "龙",
+              "白"
+            ],
+            "images": [
+              "韦",
+              "高"
+            ],
+            "specification": "莫",
+            "importMark": 48133
+          }
+        ]
+      },
+      {
+        "auditNo": "NjA4OTE4NjYwMA==",
+        "auditStatus": true,
+        "medicalInsuranceSettlement": "晓博",
+        "medicalInsuranceSettlementRatio": 86165,
+        "specialAllowance": "鑫磊",
+        "specialAllowanceRatio": 43367,
+        "products": [
+          {
+            "id": 42356,
+            "quantity": 76237,
+            "suggestedPrice": 49277,
+            "featureTags": [
+              "蔡",
+              "金",
+              "孙"
+            ],
+            "images": [
+              "罗",
+              "田",
+              "吴"
+            ],
+            "specification": "莫",
+            "importMark": 96770
+          },
+          {
+            "id": 7430,
+            "quantity": 77879,
+            "suggestedPrice": 72669,
+            "featureTags": [
+              "万",
+              "郝"
+            ],
+            "images": [
+              "汪",
+              "石",
+              "毛"
+            ],
+            "specification": "田",
+            "importMark": 88783
+          },
+          {
+            "id": 48673,
+            "quantity": 15216,
+            "suggestedPrice": 37599,
+            "featureTags": [
+              "孙",
+              "潘",
+              "蒋"
+            ],
+            "images": [
+              "孟",
+              "魏",
+              "邵",
+              "龚"
+            ],
+            "specification": "唐",
+            "importMark": 46674
+          }
+        ]
+      },
+      {
+        "auditNo": "NTY0NTU2NzEwMQ==",
+        "auditStatus": false,
+        "medicalInsuranceSettlement": "晓啸",
+        "medicalInsuranceSettlementRatio": 94656,
+        "specialAllowance": "哲瀚",
+        "specialAllowanceRatio": 89498,
+        "products": [
+          {
+            "id": 62146,
+            "quantity": 20478,
+            "suggestedPrice": 46654,
+            "featureTags": [
+              "许",
+              "谢",
+              "宋",
+              "赖"
+            ],
+            "images": [
+              "邱",
+              "姚"
+            ],
+            "specification": "史",
+            "importMark": 8035
+          },
+          {
+            "id": 4805,
+            "quantity": 82815,
+            "suggestedPrice": 30703,
+            "featureTags": [
+              "周",
+              "杜",
+              "江"
+            ],
+            "images": [
+              "魏",
+              "林",
+              "马"
+            ],
+            "specification": "潘",
+            "importMark": 59933
+          },
+          {
+            "id": 10896,
+            "quantity": 86512,
+            "suggestedPrice": 7011,
+            "featureTags": [
+              "魏",
+              "苏",
+              "段"
+            ],
+            "images": [
+              "姜",
+              "金",
+              "马",
+              "唐"
+            ],
+            "specification": "石",
+            "importMark": 81860
+          },
+          {
+            "id": 57927,
+            "quantity": 36133,
+            "suggestedPrice": 28246,
+            "featureTags": [
+              "傅",
+              "邱"
+            ],
+            "images": [
+              "崔",
+              "陶"
+            ],
+            "specification": "杨",
+            "importMark": 73689
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "patientId": "NzA4ODM4MTMw",
+    "patientName": "莫",
+    "prescriptions": [
+      {
+        "auditNo": "MTU4NzY4MTQ5NQ==",
+        "auditStatus": true,
+        "medicalInsuranceSettlement": "文博",
+        "medicalInsuranceSettlementRatio": 34016,
+        "specialAllowance": "胤祥",
+        "specialAllowanceRatio": 85600,
+        "products": [
+          {
+            "id": 61696,
+            "quantity": 62998,
+            "suggestedPrice": 52933,
+            "featureTags": [
+              "韩",
+              "唐",
+              "秦",
+              "罗"
+            ],
+            "images": [
+              "洪",
+              "邓",
+              "于",
+              "雷"
+            ],
+            "specification": "萧",
+            "importMark": 91049
+          },
+          {
+            "id": 62956,
+            "quantity": 27273,
+            "suggestedPrice": 8479,
+            "featureTags": [
+              "戴",
+              "罗"
+            ],
+            "images": [
+              "阎",
+              "谢",
+              "莫"
+            ],
+            "specification": "秦",
+            "importMark": 92884
+          },
+          {
+            "id": 16960,
+            "quantity": 36219,
+            "suggestedPrice": 6451,
+            "featureTags": [
+              "毛",
+              "唐",
+              "邵",
+              "钱"
+            ],
+            "images": [
+              "张",
+              "萧",
+              "严",
+              "石"
+            ],
+            "specification": "杜",
+            "importMark": 53698
+          },
+          {
+            "id": 94698,
+            "quantity": 26893,
+            "suggestedPrice": 97196,
+            "featureTags": [
+              "黄",
+              "史",
+              "白",
+              "汪"
+            ],
+            "images": [
+              "谢",
+              "卢"
+            ],
+            "specification": "熊",
+            "importMark": 95540
+          }
+        ]
+      },
+      {
+        "auditNo": "ODY1MzQ3NTU3MA==",
+        "auditStatus": true,
+        "medicalInsuranceSettlement": "明哲",
+        "medicalInsuranceSettlementRatio": 51461,
+        "specialAllowance": "致远",
+        "specialAllowanceRatio": 36138,
+        "products": [
+          {
+            "id": 72680,
+            "quantity": 44144,
+            "suggestedPrice": 59905,
+            "featureTags": [
+              "罗",
+              "毛",
+              "张",
+              "余"
+            ],
+            "images": [
+              "秦",
+              "史",
+              "顾"
+            ],
+            "specification": "贺",
+            "importMark": 66537
+          },
+          {
+            "id": 94808,
+            "quantity": 4333,
+            "suggestedPrice": 4910,
+            "featureTags": [
+              "武",
+              "廖"
+            ],
+            "images": [
+              "杜",
+              "阎",
+              "许",
+              "胡"
+            ],
+            "specification": "万",
+            "importMark": 53713
+          }
+        ]
+      },
+      {
+        "auditNo": "MjIzMjA1MDgxNg==",
+        "auditStatus": true,
+        "medicalInsuranceSettlement": "鑫鹏",
+        "medicalInsuranceSettlementRatio": 92624,
+        "specialAllowance": "伟诚",
+        "specialAllowanceRatio": 97304,
+        "products": [
+          {
+            "id": 89472,
+            "quantity": 34902,
+            "suggestedPrice": 84314,
+            "featureTags": [
+              "石",
+              "尹"
+            ],
+            "images": [
+              "邵",
+              "汪"
+            ],
+            "specification": "丁",
+            "importMark": 99258
+          },
+          {
+            "id": 44842,
+            "quantity": 6994,
+            "suggestedPrice": 61088,
+            "featureTags": [
+              "尹",
+              "贺",
+              "姜",
+              "朱"
+            ],
+            "images": [
+              "莫",
+              "叶"
+            ],
+            "specification": "傅",
+            "importMark": 80502
+          },
+          {
+            "id": 94491,
+            "quantity": 75907,
+            "suggestedPrice": 66466,
+            "featureTags": [
+              "于",
+              "潘"
+            ],
+            "images": [
+              "廖",
+              "郑"
+            ],
+            "specification": "龙",
+            "importMark": 47811
+          },
+          {
+            "id": 96406,
+            "quantity": 54244,
+            "suggestedPrice": 75126,
+            "featureTags": [
+              "萧",
+              "杨",
+              "严",
+              "白"
+            ],
+            "images": [
+              "武",
+              "史"
+            ],
+            "specification": "梁",
+            "importMark": 83040
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "patientId": "OTcxNTA0NzEyMA==",
+    "patientName": "王",
+    "prescriptions": [
+      {
+        "auditNo": "MTgwNjYxMjkwNA==",
+        "auditStatus": true,
+        "medicalInsuranceSettlement": "明杰",
+        "medicalInsuranceSettlementRatio": 6746,
+        "specialAllowance": "烨磊",
+        "specialAllowanceRatio": 18927,
+        "products": [
+          {
+            "id": 28272,
+            "quantity": 32913,
+            "suggestedPrice": 57020,
+            "featureTags": [
+              "姚",
+              "陶",
+              "江",
+              "毛"
+            ],
+            "images": [
+              "洪",
+              "钟",
+              "侯"
+            ],
+            "specification": "孔",
+            "importMark": 40049
+          },
+          {
+            "id": 25751,
+            "quantity": 9836,
+            "suggestedPrice": 48958,
+            "featureTags": [
+              "谭",
+              "余",
+              "姜"
+            ],
+            "images": [
+              "范",
+              "汪",
+              "叶"
+            ],
+            "specification": "石",
+            "importMark": 20896
+          },
+          {
+            "id": 20880,
+            "quantity": 73283,
+            "suggestedPrice": 79860,
+            "featureTags": [
+              "邹",
+              "段"
+            ],
+            "images": [
+              "郑",
+              "戴",
+              "唐"
+            ],
+            "specification": "戴",
+            "importMark": 51920
+          }
+        ]
+      },
+      {
+        "auditNo": "MTY2MjI0ODA0Nw==",
+        "auditStatus": false,
+        "medicalInsuranceSettlement": "航",
+        "medicalInsuranceSettlementRatio": 42404,
+        "specialAllowance": "绍齐",
+        "specialAllowanceRatio": 15460,
+        "products": [
+          {
+            "id": 97366,
+            "quantity": 8393,
+            "suggestedPrice": 39047,
+            "featureTags": [
+              "吕",
+              "汪",
+              "梁",
+              "袁"
+            ],
+            "images": [
+              "夏",
+              "钱"
+            ],
+            "specification": "黎",
+            "importMark": 27328
+          },
+          {
+            "id": 58638,
+            "quantity": 88596,
+            "suggestedPrice": 85254,
+            "featureTags": [
+              "余",
+              "萧"
+            ],
+            "images": [
+              "陈",
+              "于"
+            ],
+            "specification": "韩",
+            "importMark": 19030
+          },
+          {
+            "id": 88194,
+            "quantity": 63677,
+            "suggestedPrice": 51582,
+            "featureTags": [
+              "林",
+              "江",
+              "邹"
+            ],
+            "images": [
+              "朱",
+              "金",
+              "覃"
+            ],
+            "specification": "朱",
+            "importMark": 16673
+          }
+        ]
+      },
+      {
+        "auditNo": "NzMzODU0OTU0",
+        "auditStatus": true,
+        "medicalInsuranceSettlement": "伟宸",
+        "medicalInsuranceSettlementRatio": 75756,
+        "specialAllowance": "绍辉",
+        "specialAllowanceRatio": 68115,
+        "products": [
+          {
+            "id": 31807,
+            "quantity": 86472,
+            "suggestedPrice": 88633,
+            "featureTags": [
+              "廖",
+              "于",
+              "李",
+              "何"
+            ],
+            "images": [
+              "傅",
+              "张"
+            ],
+            "specification": "廖",
+            "importMark": 47302
+          },
+          {
+            "id": 86262,
+            "quantity": 64830,
+            "suggestedPrice": 68281,
+            "featureTags": [
+              "邱",
+              "万"
+            ],
+            "images": [
+              "沈",
+              "徐",
+              "郑",
+              "史"
+            ],
+            "specification": "贾",
+            "importMark": 42761
+          }
+        ]
+      }
+    ]
+  }
+]
