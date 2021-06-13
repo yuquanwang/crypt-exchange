@@ -9,4 +9,4 @@ const paletteLess = fs.readFileSync(path.resolve(__dirname, '../src/style.less')
 const palette = lessToJs(paletteLess, {resolveVariables: true})
 
 // write to json
-fs.writeFileSync(path.resolve(__dirname, '../src/theme.json'), JSON.stringify({...palette}))
+fs.writeFileSync(path.resolve(__dirname, '../src/theme.json'), JSON.stringify(palette))

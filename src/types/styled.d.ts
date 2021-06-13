@@ -19,6 +19,10 @@ declare module 'styled-components' {
       text: number
       borderRaduis: string // px
       pageMargin: string
-    }
+    },
+    "@font-size-base": number
+    "@typography-title-font-weight": number
+    "@card-shadow": string
+    "@padding-md": number
   }
 }
