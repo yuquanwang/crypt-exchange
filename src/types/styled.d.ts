@@ -24,5 +24,9 @@ declare module 'styled-components' {
     "@typography-title-font-weight": number
     "@card-shadow": string
     "@padding-md": number
+    "@zindex-affix": number
+    "@descriptions-bg": string
+    "@padding-lg": number
+    "@primary-color": string
   }
 }

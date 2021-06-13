@@ -252,7 +252,11 @@ export const theme: DefaultTheme = {
   "@font-size-base": 14,
   "@typography-title-font-weight": 600,
   "@card-shadow": '0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09)',
-  "@padding-md": 16 // small containers and buttons
+  "@padding-md": 16, // small containers and buttons
+  "@zindex-affix": 10,
+  "@descriptions-bg": "#fafafa",
+  "@padding-lg": 24,
+  "@primary-color": "#1890ff"
 }
 
 export const TYPES = {
