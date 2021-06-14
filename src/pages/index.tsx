@@ -1,7 +1,7 @@
 import {
   ApiTwoTone, ArrowDownOutlined, CheckCircleOutlined, FacebookOutlined, LinkedinOutlined, MenuFoldOutlined, SoundTwoTone, SwapRightOutlined, TrademarkCircleTwoTone, TwitterOutlined, UserOutlined, WalletTwoTone, YoutubeOutlined
 } from '@ant-design/icons'
-import { Avatar, Button, Card, Collapse, Comment, Layout, List, Tag } from 'antd'
+import { Avatar, Button, Card, Collapse, Comment, Layout, List, Radio, Tag } from 'antd'
 import moment from 'moment'
 import React, { MouseEvent, ReactNode, useEffect, useState } from 'react'
 import styled from 'styled-components'
@@ -87,14 +87,22 @@ function Trigger(props: { collapsed: boolean }) {
 
 const Swap = styled(Button)`
   margin-top: 1em;
+  width: 100%;
 `
 
 const SwapCard = styled(Card)`
   box-shadow: ${({ theme }) => theme['@card-shadow']};
   width: 100%;
   max-width: 436px;
-  margin: 1em auto;
+  margin: ${({ theme }) => theme['@margin-md']}px auto;
   text-align: center;
+  .ant-card-body > .ant-radio-group {
+    text-align: left;
+    margin-bottom: ${({ theme }) => theme['@margin-sm']}px;
+    .ant-radio-wrapper {
+      margin-bottom: ${({ theme }) => theme['@margin-xss']}px;
+    }
+  }
   .anticon-arrow-down {
     color: ${({ theme }) => theme['@primary-color']};
   }
@@ -114,6 +122,11 @@ const data = [
     title: 'Ant Design Title 4',
   },
 ]
+
+const TradeTime = styled.span`
+  font-size: ${({ theme }) => theme['@font-size-sm']}px;
+  margin-left: ${({ theme }) => theme['@margin-xss']}px;
+`
 
 export default function HomePage() {
   const [collapsed, setCollapsed] = useState(false)
@@ -162,7 +175,7 @@ export default function HomePage() {
               renderItem={item => (
                 <List.Item>
                   <Avatar />
-                  <span>{moment().format('YYYY-MM-DD HH:mm:ss')}</span>
+                  <TradeTime>{moment().format('YYYY-MM-DD HH:mm:ss')}</TradeTime>
                   <Tag icon={<LinkedinOutlined />} color="#55acee">LinkedIn</Tag>
                   <SwapRightOutlined />
                   <Tag icon={<LinkedinOutlined />} color="#55acee">LinkedIn</Tag>
@@ -193,7 +206,7 @@ export default function HomePage() {
         <Card><CandlestickChart /></Card>
         <Card title="新消息">
           <StyledComment
-            actions={[<Tag color="magenta">BNB</Tag>, <Tag color="red">MDX</Tag>]}
+            actions={[<Tag.CheckableTag checked>BNB</Tag.CheckableTag>, <Tag.CheckableTag checked={false}>MDX</Tag.CheckableTag>]}
             avatar={<SoundTwoTone />}
             content={
               <p>
@@ -206,10 +219,15 @@ export default function HomePage() {
           />
         </Card>
         <SwapCard title="下单">
-          <SwapInput />
+          <Radio.Group name="radiogroup" defaultValue={1}>
+            <Radio value={1}><Avatar /> Binance</Radio>
+            <Radio value={2}><Avatar /> Huobi global</Radio>
+            <Radio value={3}><Avatar /> Gate.io</Radio>
+          </Radio.Group>
+          <SwapInput direction='From' balance={0.00910} />
           <ArrowDownOutlined />
-          <SwapInput />
-          <Swap placeholder="请输入金额" disabled>Swap</Swap>
+          <SwapInput direction='To' />
+          <Swap type="primary" >Swap</Swap>
         </SwapCard>
       </Layout.Content>
     </StyledLayout>)

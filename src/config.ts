@@ -249,14 +249,21 @@ export const theme: DefaultTheme = {
     borderRaduis: '5px', // 单位px
     pageMargin: '3rem 2rem'
   },
-  "@font-size-base": 14,
-  "@typography-title-font-weight": 600,
+  "@border-color-base": "#D9D9D9", // base border outline a component
+  "@border-radius-base": 2,
   "@card-shadow": '0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09)',
-  "@padding-md": 16, // small containers and buttons
-  "@zindex-affix": 10,
   "@descriptions-bg": "#fafafa",
+  "@font-size-base": 14,
+  "@font-size-sm": 12,
+  "@margin-md": 16,
+  "@margin-sm": 12,
+  "@margin-xs": 8,
+  "@margin-xss": 4,
   "@padding-lg": 24,
-  "@primary-color": "#1890ff"
+  "@padding-md": 16, // small containers and buttons
+  "@primary-color": "#1890ff",
+  "@typography-title-font-weight": 600,
+  "@zindex-affix": 10,
 }
 
 export const TYPES = {
