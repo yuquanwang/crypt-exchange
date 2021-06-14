@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 88">
+  <defs>
+    <style>.cls-cross-ring-circle,.cls-cross-ring-content{fill:#12cd9f;}.cls-cross-ring-circle{fill-rule:evenodd;}.cls-cross-ring-circle-inner{fill:#fff;}</style>
+  </defs>
+  <g>
+    <g>
+      <path class="cls-cross-ring-circle" d="M44,0A44,44,0,1,1,0,44,44,44,0,0,1,44,0Z" />
+      <path class="cls-cross-ring-circle-inner" d="M44,20A24.07,24.07,0,0,0,20,44h0a24,24,0,0,0,48,0h0A24.07,24.07,0,0,0,44,20Z" />
+      <path class="cls-cross-ring-content" d="M55.37,40.21H47.79V32.63a3.79,3.79,0,1,0-7.58,0v7.58H32.63a3.79,3.79,0,0,0,0,7.58h7.58v7.58a3.79,3.79,0,1,0,7.58,0V47.79h7.58a3.79,3.79,0,1,0,0-7.58Z" />
+    </g>
+  </g>
+</svg>

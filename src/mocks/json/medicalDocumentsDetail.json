@@ -1,0 +1,38 @@
+{
+  "status": 200,
+  "error": "",
+  "message": "",
+   "data": {
+    "patient": {
+      "name": "测试02",
+      "idcard": "410603199401010001",
+      "medicareId": "SCCD35124515"
+    },
+    "identification": {
+      "id": 1,
+      "status": 0
+    },
+    "treatment": {
+      "id": 1,
+      "status": 0
+    },
+    "prescription": {
+      "id": 5,
+      "status": 0,
+      "drugs": [
+        {
+          "commonName": "奥比帕利片",
+          "productName": "",
+          "specification": "440ml/支",
+          "dosage": "398.00"
+        }
+      ],
+      "prescriptionDate": 1587312000000,
+      "expirationDate": 1588262400000,
+      "hospitalName": "四川大学华西医院",
+      "department": "测试科室",
+      "doctor": "测试医生"
+    },
+    "handledDate": 0
+  }
+}

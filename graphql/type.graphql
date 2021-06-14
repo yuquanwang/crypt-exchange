@@ -1,0 +1,216 @@
+
+type Company {
+    id: ID
+    name: String @fake(type:companyName)
+    industry: String @examples(values: ["IT", "Manufacturing", "Medicine", "Media"])
+    employees: [Employee!] @listLength(min: 5, max: 10)
+}
+
+type Employee {
+    id: ID
+    firstName: String @fake(type: firstName, locale:en_CA)
+    lastName: String @fake(type: lastName, locale:en_CA)
+    address: String @fake(type:streetAddress, options: { useFullAddress: true })
+    subordinates: [Employee!] @listLength(min: 1, max: 3)
+    company: Company
+}
+type Product { #药品
+#     id:Int #商品id
+
+#     genericName: String @fake(type: firstName, locale:zh_CN)  #药品通用名
+#     usage: String @fake(type: firstName, locale:zh_CN)  #用法用量
+#     factory: String @fake(type: firstName, locale:zh_CN)  #厂牌
+#     featureTags: [String] @fake(type: firstName, locale:zh_CN)  # 功能标签（上门自提等）
+#     indication: String @fake(type: firstName, locale:zh_CN)  #适应症
+#     adverseReaction: String @fake(type: firstName, locale:zh_CN)  # 不良反应
+#     contraindication: String @fake(type: firstName, locale:zh_CN) #禁忌
+#     precaution: String @fake(type: firstName, locale:zh_CN)  #注意事项
+#     approvalNo: String @fake(type: firstName, locale:zh_CN)  # 批准文号
+#     images: [String] @fake(type: firstName, locale:zh_CN)  # 大图列表
+#     importMark: Int #进口标识 0和null 否   1 是
+#     importState: String @fake(type: firstName, locale:zh_CN) #进口国
+#     specification:String @fake(type: firstName, locale:zh_CN) #规格
+#     suggestedPrice: Int
+  
+  
+  
+    quantity: Int #数量	
+  	dosage:String @fake(type: firstName, locale:zh_CN) #剂量
+    drugCode:String @fake(type: zipCode, locale:zh_CN) #通用名编码
+    drugName: String @fake(type: firstName, locale:zh_CN) #药品商品名
+    importedTag:String @fake(type: zipCode, locale:zh_CN) #进口标签	
+  	manufacturer:String @fake(type: companyName, locale:zh_CN) #厂商
+  	medicareTag:String @fake(type: zipCode, locale:zh_CN) #医保标签	
+    price: Int #药品价格
+  	productId:String @fake(type: zipCode, locale:zh_CN) #商品ID	
+  	productName:String @fake(type: productName locale:zh_CN) #商品名	
+  	spec:String @fake(type: zipCode, locale:zh_CN) #规格	
+  	thumbnailUrl:String @fake(type: url, locale:zh_CN) #缩略图		
+  	genericName: String @fake(type: firstName, locale:zh_CN) #药品商品名
+  	approvalNo:  String @fake(type: number, locale:zh_CN) #药品商品名
+  
+  	num: Int
+  	specification: String @fake(type: url, locale:zh_CN) #缩略图	
+  	unit: String @fake(type: url, locale:zh_CN) #缩略图	
+}
+
+
+# 治疗方案详情
+type Treatment {
+  id: ID
+  status: String
+  doctor: String @fake(type: firstName, locale:zh_CN) 
+  dosage: String @fake(type: firstName, locale:zh_CN) 
+  duration:  String @fake(type: firstName, locale:zh_CN) 
+  end: Int
+  hospital:  String @fake(type: firstName, locale:zh_CN) 
+  routine:  String @fake(type: firstName, locale:zh_CN) 
+  start: Int
+  drugInfo: Product
+
+  commonName: String @fake(type: firstName, locale:zh_CN) 
+  diseaseName: String @fake(type: firstName, locale:zh_CN) 
+  doctorName: String @fake(type: firstName, locale:zh_CN) 
+  dosageRoute: String @fake(type: firstName, locale:zh_CN) 
+  endDate: Int
+  feedback: String @fake(type: firstName, locale:zh_CN) 
+  firstDosage: String @fake(type: firstName, locale:zh_CN) 
+  firstInterval: String @fake(type: firstName, locale:zh_CN) 
+  hospitalName: String @fake(type: firstName, locale:zh_CN) 
+  maintainDosage: String @fake(type: firstName, locale:zh_CN) 
+  maintainInterval: String @fake(type: firstName, locale:zh_CN) 
+  pic: String @fake(type: firstName, locale:zh_CN) 
+  productName: String @fake(type: firstName, locale:zh_CN) 
+  secondDosage: String @fake(type: firstName, locale:zh_CN) 
+  secondInterval: String @fake(type: firstName, locale:zh_CN) 
+  startDate: Int
+}
+
+type TreatmentList {
+  doctor: String @fake(type: firstName, locale:zh_CN) 
+  dosage: String @fake(type: firstName, locale:zh_CN) 
+  duration: String @fake(type: firstName, locale:zh_CN) 
+  end: Int
+  hospital: String @fake(type: firstName, locale:zh_CN) 
+  id: Int
+  routine: String @fake(type: firstName, locale:zh_CN) 
+  start: Int
+  drugInfo: [Product!]  @listLength(min: 0, max: 3)
+}
+
+type Patient {
+  idcard: String
+  medicareId: String
+  name: String
+  patientId: ID
+  patientName: String @fake(type: firstName, locale:zh_CN)
+  prescriptions: [Prescription]
+}
+
+
+
+
+
+# 查看处方维度审核详情
+type PrescriptionDetail {
+  handledDate: String @fake(type: futureDate, locale:zh_CN)
+  pharmacist: String @fake(type: futureDate, locale:zh_CN) 	
+  treatment: Treatment
+  prescription: Prescription
+  patient: Patient
+  identification: Identification
+}
+
+# 处方详情
+type Prescription {
+  id:ID								#处方ID
+  name:String @fake(type: firstName, locale:zh_CN)
+  number:String @fake(type: firstName, locale:zh_CN)
+	code:String @fake(type: firstName, locale:zh_CN) # 审核编号
+  drugs:[Product!]  @listLength(min: 0, max: 3)
+  expiredDate: String @fake(type: futureDate, locale:zh_CN)
+  reason: String @fake(type: firstName, locale:zh_CN) # 原因	
+  status: Int # 状态	
+  thumbnailUrl:String @fake(type: url, locale:zh_CN) #缩略图		
+	version: Int # 版本号/乐观锁	
+  
+  
+  department: String
+  doctor: String
+  hospitalName: String
+  prescriptionDate: Int
+}
+
+# 获取病种认定治疗方案详情 
+type Disease {
+  disease: String
+  patientId: Int
+  patientName: String
+  treatments: [Treatment]
+  identification: Identification
+}
+
+type PagedMedicalDocument{
+  
+  pageCount:Int
+  pageNo:Int
+  pageSize:Int
+  recordCount:Int
+	patientId:String @fake(type: firstName, locale:zh_CN) # 患者id
+  records:[MedicalDocument!]
+}
+
+
+type MedicalDocument{
+	id:ID								#处方ID
+  name:String @fake(type: firstName, locale:zh_CN)
+  number:String @fake(type: firstName, locale:zh_CN)
+	code:String @fake(type: firstName, locale:zh_CN) # 审核编号
+  drugs:[Product!]  @listLength(min: 0, max: 3)
+  expiredDate: String @fake(type: futureDate, locale:zh_CN) # 过期时间 yyyy-MM-dd	
+  reason: String @fake(type: firstName, locale:zh_CN) # 原因	
+  status: Int # 状态	
+  thumbnailUrl:String @fake(type: url, locale:zh_CN) #缩略图		
+	version: Int # 版本号/乐观锁	
+}
+
+
+#认定病种详情
+type Identification {
+  id:ID
+  approvedDate: Int
+  diseaseName: String @fake(type: firstName, locale:zh_CN) # 审核编号
+  doctorName: String @fake(type: firstName, locale:zh_CN) # 审核编号
+  endDate: Int
+  feedback: String @fake(type: firstName, locale:zh_CN) # 审核编号
+  hospitalName: String @fake(type: firstName, locale:zh_CN) # 审核编号
+  pic: String @fake(type: url, locale:zh_CN) # 审核编号
+  startDate: Int
+  status: Int
+  
+  doctor: String
+  end: Int
+  hospital: String
+  start: Int
+}
+
+
+type Query {
+    employee(id: ID): Employee
+    company(id: ID): Company
+    patient(id: ID): Patient
+		prescription(id: ID):PrescriptionDetail
+   	identification(id: ID):Identification
+   	diseases(id: ID):Disease
+
+  	
+    treatmentList(id: ID):TreatmentList
+    companies: [Company!]
+    patients: [Patient!]
+    prescriptions(patientId:Int = 1): [Prescription!]
+  	medicalDocuments: [MedicalDocument!]
+  
+  	treatmentLists: [TreatmentList!] #
+  	treatments: [Treatment!] #
+    PagedMedicalDocument(pageNo:String = 1 ,pageSize:Int = 10,patientId:String, statusList:Int = 1):PagedMedicalDocument
+}

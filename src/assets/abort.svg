@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 88">
+  <defs>
+    <style>.cls-abort-circle,.cls-abort-rect{fill:#feb857;}.cls-abort-circle{fill-rule:evenodd;}.cls-abort-circle-inner{fill:#fff;}</style>
+  </defs>
+  <g>
+    <g>
+      <path class="cls-abort-circle" d="M44,0A44,44,0,1,1,0,44,44,44,0,0,1,44,0Z" />
+      <rect class="cls-abort-circle-inner" x="20" y="20" width="48" height="48" rx="24" />
+      <rect class="cls-abort-rect" x="32.63" y="32.63" width="22.74" height="22.74" rx="6" />
+    </g>
+  </g>
+</svg>

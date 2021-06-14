@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42">
+  <defs>
+    <style>.cls-close-rect{fill:none;}.cls-close-content{fill-rule:evenodd;}</style>
+  </defs>
+  <g>
+    <g>
+      <rect class="cls-close-rect" width="42" height="42" transform="translate(42 42) rotate(180)" />
+      <path class="cls-close-content" d="M23.67,21.12,36.19,33.64a2,2,0,0,1-2.78,2.78L20.88,23.9,8.59,36.19a2,2,0,0,1-2.78-2.78L18.1,21.12,5.58,8.59A2,2,0,0,1,8.36,5.81L20.88,18.33,33.64,5.58a2,2,0,0,1,2.78,2.78Z" />
+    </g>
+  </g>
+</svg>

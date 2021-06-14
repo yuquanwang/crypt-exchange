@@ -1,0 +1,19 @@
+{
+  "commonName": "药品通用名",
+  "diseaseName": "疾病名称",
+  "doctorName": "医生名",
+  "dosageRoute": "给药途径",
+  "endDate": "方案结束时间",
+  "feedback": "审核失败原因",
+  "firstDosage": "首次用药剂量",
+  "firstInterval": "首次用药周期",
+  "hospitalName": "医院名称",
+  "maintainDosage": "维持用药剂量",
+  "maintainInterval": "维持用药周期",
+  "pic": "治疗方案图片url",
+  "productName": "药品商品名",
+  "secondDosage": "二次用药剂量",
+  "secondInterval": "二次用药周期",
+  "startDate": "方案开始时间",
+  "status": "审核状态"
+}

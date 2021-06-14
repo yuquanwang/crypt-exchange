@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44">
+  <defs>
+    <style>.cls-squre-rect{fill:#fff;}.cls-squre{fill:#ccc;}</style>
+  </defs>
+  <g>
+    <g>
+      <rect class="cls-squre-rect" x="0.5" y="0.5" width="43" height="43" rx="9.5" />
+      <path class="cls-squre" d="M34,1a9,9,0,0,1,9,9V34a9,9,0,0,1-9,9H10a9,9,0,0,1-9-9V10a9,9,0,0,1,9-9H34m0-1H10A10,10,0,0,0,0,10V34A10,10,0,0,0,10,44H34A10,10,0,0,0,44,34V10A10,10,0,0,0,34,0Z" />
+    </g>
+  </g>
+</svg>

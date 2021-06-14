@@ -1,0 +1,47 @@
+{
+  "name": "@medtree/widgets",
+  "version": "1.4.0",
+  "private": true,
+  "description": "UI组件库",
+  "author": "mutrix <yuquanwang1990@icloud.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "sideEffects": false,
+  "directories": {
+    "lib": "lib",
+    "es": "es",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib",
+    "es"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@code.aliyun.com:28920-starbridge/widgets.git"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "start": "yarn start-storybook -p 3001 --ci",
+    "test": "jest",
+    "version": "yarn test && yarn run build"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.0.1"
+  },
+  "dependencies": {
+    "animejs": "^3.1.0",
+    "polished": "^3.4.4"
+  },
+  "devDependencies": {
+    "@storybook/react": "^5.3.15",
+    "@types/animejs": "^3.1.0",
+    "@types/jest": "^24.9.0",
+    "jest": "^25.1.0",
+    "rollup": "^2.0.6"
+  }
+}

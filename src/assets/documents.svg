@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 88 88">
+  <defs>
+    <style>.cls-documents-circle{fill:url(#gradient_31);}.cls-documents-content{fill:url(#gradient_40);}</style>
+    <linearGradient id="gradient_31" x1="165.85" y1="510.77" x2="165.85" y2="511.77" gradientTransform="matrix(88, 0, 0, -88, -14550.98, 45035.47)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#feb857" />
+      <stop offset="1" stop-color="#fed49a" />
+    </linearGradient>
+    <linearGradient id="gradient_40" x1="44" y1="65.22" x2="44" y2="22.78" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffedd9" />
+      <stop offset="1" stop-color="#fff" />
+    </linearGradient>
+  </defs>
+  <g>
+    <g>
+      <path class="cls-documents-circle" d="M44,0A44,44,0,1,1,0,44,44,44,0,0,1,44,0Z" />
+      <path class="cls-documents-content" d="M67.76,33.39,66.2,31.82V36H21.79V31.82l-1.56,1.57c-1.56,1.57-2.68,2-2.05,5.31s3.65,21.42,4.1,23.87a3.26,3.26,0,0,0,3.23,2.65h37a3.26,3.26,0,0,0,3.23-2.65c.46-2.45,3.48-20.57,4.11-23.87S69.33,35,67.76,33.39ZM49,52.09H46v3a2,2,0,0,1-4,0v-3H39a2,2,0,0,1,0-4h3v-3a2,2,0,0,1,4,0v3h3a2,2,0,1,1,0,4ZM62.49,30.73a2.59,2.59,0,0,0-2.64-2.65H28.15a2.59,2.59,0,0,0-2.64,2.65v2.66h37Zm-7.93-7.95H33.44a2.59,2.59,0,0,0-2.64,2.65H57.2a2.59,2.59,0,0,0-2.64-2.65Z" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42">
+  <defs>
+    <style>.cls-up{fill:none;}</style>
+  </defs>
+  <g>
+    <g>
+      <path d="M4.6,27.88a2,2,0,0,1,.57-1.4L19.61,12.05a2,2,0,0,1,2.78,0L36.83,26.48a2,2,0,0,1-2.78,2.79l-13-13L8,29.27A2,2,0,0,1,4.6,27.88Z" />
+      <rect class="cls-up" width="42" height="42" transform="translate(0 42) rotate(-90)" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42">
+  <defs>
+    <style>.cls-thumb-green-rect{fill:none;}.cls-thumb-green-stroke{fill:#12cd9f;}.cls-thumb-green-inner{fill:#71e1c5;}</style>
+  </defs>
+  <g>
+    <g>
+      <rect class="cls-thumb-green-rect" width="42" height="42" />
+      <path class="cls-thumb-green-stroke" d="M29,15H26l.1-.23a6,6,0,0,0-3.79-7.55h0A4.12,4.12,0,0,0,21,7a4.19,4.19,0,0,0-3.67,2.15L14,15H13a6,6,0,0,0-6,6v8a6,6,0,0,0,6,6H23A12,12,0,0,0,35,23V21A6,6,0,0,0,29,15Z" />
+      <path class="cls-thumb-green-inner" d="M10,29V21a3,3,0,0,1,3-3V32A3,3,0,0,1,10,29Z" />
+      <path class="cls-thumb-green-inner" d="M32,23a9,9,0,0,1-9,9H16V17.21a2.86,2.86,0,0,0,.61-.73l3.32-5.87a1.21,1.21,0,0,1,1.43-.55,3,3,0,0,1,1.74,1.5,3,3,0,0,1,.2,2.14l0,.06A3,3,0,0,0,26,18h3a3,3,0,0,1,3,3Z" />
+    </g>
+  </g>
+</svg>

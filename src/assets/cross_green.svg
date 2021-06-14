@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 98">
+  <defs>
+    <style>.cls-cross-green-circle{fill:#12cd9f;}.cls-cross-green-content{fill:#fff;}</style>
+  </defs>
+  <g>
+    <g>
+      <circle class="cls-cross-green-circle" cx="49" cy="49" r="49" />
+      <path class="cls-cross-green-content" d="M70,46H52V28a3,3,0,0,0-3-3h0a3,3,0,0,0-3,3V46H28a3,3,0,0,0,0,6H46V70a3,3,0,0,0,3,3h0a3,3,0,0,0,3-3V52H70a3,3,0,0,0,0-6Z" />
+    </g>
+  </g>
+</svg>

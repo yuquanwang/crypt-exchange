@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <style>.cls-wallet-circle{fill:#a45c2a;}.cls-wallet-shell{fill:url(#gradient_45);}.cls-wallet-button{fill:url(#gradient_45-2);}</style>
+    <linearGradient id="gradient_45" x1="24" y1="33.82" x2="24" y2="14.18" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffbf68" />
+      <stop offset="0.26" stop-color="#ffc679" />
+      <stop offset="0.72" stop-color="#fed091" />
+      <stop offset="1" stop-color="#fed49a" />
+    </linearGradient>
+    <linearGradient id="gradient_45-2" x1="28.37" y1="25.63" x2="28.37" y2="22.36" xlink:href="#gradient_45" />
+  </defs>
+  <g>
+    <g>
+      <circle class="cls-wallet-circle" cx="24" cy="24" r="24" />
+      <path class="cls-wallet-shell" d="M32.73,14.18H15.27A3.25,3.25,0,0,0,12,17.45v13.1a3.27,3.27,0,0,0,3.27,3.27H32.73A3.26,3.26,0,0,0,36,30.55V26.72H27.27a2.73,2.73,0,0,1,0-5.46H36V17.45A3.27,3.27,0,0,0,32.73,14.18Z" />
+      <circle class="cls-wallet-button" cx="28.37" cy="23.99" r="1.64" />
+    </g>
+  </g>
+</svg>
